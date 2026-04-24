@@ -100,22 +100,22 @@ class Robot {
 		} else {
 			return "なんの成果も得られませんでした。";
 		}
-
-	
-	
-//配列を0でクリアする)
-class ClearRobot{
-	public int clearTable() {
-
-		ingredients[0]=0;
-		ingredients
-		
-	}
-		
 	}
 }
 
-public class RobotMaker {
+//配列を0でクリアする)
+class ClearRobot {
+	public void clearTable(int ingredients[]) {
+
+		for (int i = 0; i < ingredients.length; i++) {
+
+			ingredients[i] = 0;
+		}
+
+	}
+}
+
+final class RobotMaker {
 
 	public static void main(String[] args) throws IOException {
 
@@ -176,5 +176,4 @@ public class RobotMaker {
 
 		System.out.println("\nきれいになりました。");
 	}
-
 }
