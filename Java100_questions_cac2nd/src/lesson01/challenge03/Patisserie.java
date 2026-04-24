@@ -21,6 +21,27 @@
 
 package lesson01.challenge03;
 
-public class Patisserie {
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
+public class Patisserie {
+	public static void main(String[] args) throws IOException {
+
+		int sitoro = 30;
+		int shoko = 30;
+		int pisu = 30;
+
+		System.out.println("シトロン      \\250 ・・・ 残り" + sitoro + "個");
+		System.out.println("ショコラ      \\280 ・・・ 残り" + shoko + "個");
+		System.out.println("ピスターシュ  \\320 ・・・ 残り" + pisu + "個");
+
+		System.out.println("文字列を入力してください");
+
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		String str = reader.readLine();
+
+		System.out.println(str + "が出力されました");
+
+	}
 }

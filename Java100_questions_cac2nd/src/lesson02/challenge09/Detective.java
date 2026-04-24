@@ -22,8 +22,8 @@
  * 探偵：
  * あなたが犯人だと思う人の身長と体重を入れてみてください。
  *
- * 身長をここに入力＞○○
- * 体重をここに入力＞○○
+ * 身長をここに入力＞185～
+ * 体重をここに入力＞60~70
  *
  *
  * <犯人の可能性がある場合の実行例>
@@ -66,7 +66,12 @@ public class Detective {
 		int height = Integer.parseInt(heightStr);
 		int weight = Integer.parseInt(weightStr);
 
-		//ここに記述
+		if (height > 185 && weight < 80 && weight > 60)//ここに記述
+		{
+			System.out.println("その方は犯人である可能性がありますね。");
+		} else {
+			System.out.println("その方は犯人ではありませんね。");
+		}
 
 	}
 
