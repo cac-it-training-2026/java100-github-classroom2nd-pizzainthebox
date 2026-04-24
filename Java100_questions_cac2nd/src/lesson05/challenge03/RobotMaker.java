@@ -49,6 +49,7 @@
 
 package lesson05.challenge03;
 
+//ここに問題2で作成したクラスに次の条件を足したクラスを作成してください。
 class Robot {
 	int energy;
 	String name;

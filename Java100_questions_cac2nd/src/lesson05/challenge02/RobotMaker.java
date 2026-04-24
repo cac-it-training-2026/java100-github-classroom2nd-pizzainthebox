@@ -41,8 +41,6 @@
 
 package lesson05.challenge02;
 
-//ここに問題1で作成したクラスに次の条件を足したクラスを作成してください。
-//フィールド名：name(String型)
 class Robot {
 	int energy;
 	String name;

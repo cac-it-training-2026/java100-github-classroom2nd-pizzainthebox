@@ -43,7 +43,7 @@ public class Explorer {
 		int apsedTime = 0;
 
 		//ここにwhile文を記述する。
-		while (nauticalMile >= 0) {
+		while (nauticalMile > 0) {
 
 			nauticalMile -= 22;
 			System.out.println("隊長：");

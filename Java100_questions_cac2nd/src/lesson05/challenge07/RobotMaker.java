@@ -27,32 +27,67 @@
 
 package lesson05.challenge07;
 
+import java.util.Random;
+
 //ここに問題6で作成したクラスに次の条件を足したクラスを作成してください。
-//メソッド名：getWater(引数なし、戻り値int、
-//現在の水量(フィールドwaterの値)を戻り値として返す)
+class Robot {
+	int energy;
+	String name;
+	int water;
+
+	public void randomWater() {
+		Random rand = new Random();
+
+		int output = rand.nextInt(9) + 1;
+		System.out.println("水を" + output + "L出しました");
+		this.water = water - output;
+
+	}
+
+	public void makeOmelet(int eggNum, int butterNum) {
+		int tamakazu = eggNum / 2;
+		int batakazu = butterNum / 5;
+
+		int omumoto = Math.min(tamakazu, batakazu);
+		System.out.println(omumoto + "人分のオムレツができました。");
+	}
+
+	int getWater() {
+		return water;
+
+	}
+
+}
+//メソッド名：makeOmelet(引数int eggNum ,int butterNum、戻り値void、
+//入力されて材料の個数に併せてオムレツの個数を表示する)
 
 public class RobotMaker {
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
-        System.out.println("Rさん：");
-        System.out.println("でもこれランダムに水を入れた時にロボット内の水量がわかりませんね。\n");
-        System.out.println("G博士：");
-        System.out.println("そう言えばそうじゃな。よし、ちょっと待っとれ。\n");
-        System.out.println("G博士：");
-        System.out.println("......出来た！現在の水量を表示する機能じゃ。\n");
+		System.out.println("Rさん：");
+		System.out.println("でもこれランダムに水を入れた時にロボット内の水量がわかりませんね。\n");
+		System.out.println("G博士：");
+		System.out.println("そう言えばそうじゃな。よし、ちょっと待っとれ。\n");
+		System.out.println("G博士：");
+		System.out.println("......出来た！現在の水量を表示する機能じゃ。\n");
 
-        int water = 0;
+		int water = 30;
 
-        //ここでRobotクラスのインスタンスを作り、
-        //（インスタンス名はrobot）
-        //randomWaterを実行する。
-        //getWaterを実行する。
+		//ここでRobotクラスのインスタンスを作り、
+		Robot robot = new Robot();
+		robot.water = water;
 
-        System.out.println("「ガ～ピィーガ～、ゲンザイノスイリョウハ" + water + "リットルデス。」\n");
+		//（インスタンス名はrobot）
+		//randomWaterを実行する。
+		robot.randomWater();
+		//getWaterを実行する。
+		water = robot.getWater();
 
-        System.out.println("Rさん：");
-        System.out.println("なんか雑音が気になりますが、一応出来てますね。\n");
-    }
+		System.out.println("「ガ～ピィーガ～、ゲンザイノスイリョウハ" + water + "リットルデス。」\n");
+
+		System.out.println("Rさん：");
+		System.out.println("なんか雑音が気になりますが、一応出来てますね。\n");
+	}
 
 }

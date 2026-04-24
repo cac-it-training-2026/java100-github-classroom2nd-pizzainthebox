@@ -33,7 +33,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Patisserie {
-
 	public static void main(String[] args) throws IOException {
 
 		System.out.println("たいへんお待たせしました。");
@@ -66,5 +65,4 @@ public class Patisserie {
 		System.out.println("承りました！");
 
 	}
-
 }
